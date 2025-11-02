@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar" aria-hidden="true">
+      <ul>
+        <li><a href="#" id="menuItem1">第一單元作品</a></li>
+        <li><a href="#" id="menuItem2">第一單元講義</a></li>
+        <li><a href="#">測驗系統</a></li>
+        <li><a href="#">回到首頁</a></li>
+      </ul>
+    </div>
+
+    <!-- iframe overlay，用於在頁面上顯示外部內容 -->
+    <div id="iframeOverlay" aria-hidden="true">
+      <div class="iframe-header">
+        <button id="iframeClose" aria-label="關閉">✕</button>
+      </div>
+      <div class="iframe-wrap">
+        <iframe id="contentFrame" src="" frameborder="0" title="內容視窗"></iframe>
+      </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
