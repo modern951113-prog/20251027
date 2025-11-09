@@ -15,6 +15,7 @@ let iframeCloseBtn;
 let contentFrame;
 const iframeURL = 'https://modern951113-prog.github.io/20251020/';
 const iframeURL2 = 'https://hackmd.io/@v2yhlhTSTK-nIky2dL9Uqw/SyaMwmCiex';
+const iframeURL3 = 'https://modern951113-prog.github.io/20251103/';
 
 function setup() {
 	//createCanvas(700, 875);//A4 size
@@ -67,6 +68,15 @@ function setup() {
 		menuItem2.addEventListener('click', (e) => {
 			e.preventDefault();
 			showIframeOverlay(iframeURL2);
+		});
+	}
+
+	// 第三個選單：測驗系統
+	let menuItem3 = document.getElementById('menuItem3');
+	if (menuItem3) {
+		menuItem3.addEventListener('click', (e) => {
+			e.preventDefault();
+			showIframeOverlay(iframeURL3);
 		});
 	}
 }
