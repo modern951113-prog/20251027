@@ -16,6 +16,8 @@ let contentFrame;
 const iframeURL = 'https://modern951113-prog.github.io/20251020/';
 const iframeURL2 = 'https://hackmd.io/@v2yhlhTSTK-nIky2dL9Uqw/SyaMwmCiex';
 const iframeURL3 = 'https://modern951113-prog.github.io/20251103/';
+const iframeURL4 = 'https://hackmd.io/@v2yhlhTSTK-nIky2dL9Uqw/ryI2hLAyZe';
+const iframeURL5 = 'https://hackmd.io/@v2yhlhTSTK-nIky2dL9Uqw/HyG175Rkbe';
 
 function setup() {
 	//createCanvas(700, 875);//A4 size
@@ -77,6 +79,32 @@ function setup() {
 		menuItem3.addEventListener('click', (e) => {
 			e.preventDefault();
 			showIframeOverlay(iframeURL3);
+		});
+	}
+
+	// 第四個選單：測驗卷筆記
+	let menuItem4 = document.getElementById('menuItem4');
+	if (menuItem4) {
+		menuItem4.addEventListener('click', (e) => {
+			e.preventDefault();
+			showIframeOverlay(iframeURL4);
+		});
+	}
+
+	// 第五個選單：作品筆記
+	let menuItem5 = document.getElementById('menuItem5');
+	if (menuItem5) {
+		menuItem5.addEventListener('click', (e) => {
+			e.preventDefault();
+			showIframeOverlay(iframeURL5);
+		});
+	}
+
+	// 回到首頁
+	let menuItemHome = document.getElementById('menuItemHome');
+	if (menuItemHome) {
+		menuItemHome.addEventListener('click', () => {
+			window.location.reload();
 		});
 	}
 }
